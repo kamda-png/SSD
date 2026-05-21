@@ -1,0 +1,6 @@
+{
+  "name": "Sung Sim Dang Bakery",
+  "description": "Artisanal bakery heritage since 1956, featuring the famous Fried Soboro and more from Daejeon, South Korea.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

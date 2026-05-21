@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif KR", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  /* Luxury Artisanal Color Accents */
+  --color-primary: #3c2a21;
+  --color-secondary: #a85f00;
+  --color-secondary-container: #ffe0b2;
+  --color-on-secondary-container: #5d3500;
+  --color-crust-brown: #5c3e35;
+  --color-butter-cream: #fbf5ed;
+  --color-background: #fffdfb;
+  --color-stone-white: #ffffff;
+  
+  /* Spacing Grid Utilities */
+  --px-margin-desktop: 4rem;
+  --px-margin-mobile: 1rem;
+  --max-width-container-max: 1200px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+}
+
+.scroll-reveal {
+  animation: scrollReveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+}
+
+@keyframes scrollReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
